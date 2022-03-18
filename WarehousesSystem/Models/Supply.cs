@@ -2,8 +2,11 @@
 
 namespace WarehousesSystem.Models
 {
-    internal class Supply:Operation
+    public class Supply:Operation
     {
+        public string SupplierEmail { get; set; }
+
+        public Supplier Supplier { get; set; }
 
     }
 }

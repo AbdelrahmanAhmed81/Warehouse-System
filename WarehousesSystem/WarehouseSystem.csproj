@@ -58,14 +58,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\202203171929578_initial.cs" />
+    <Compile Include="Migrations\202203171929578_initial.designer.cs">
+      <DependentUpon>202203171929578_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203172139335_warehouse-item-measureunit-creating.cs" />
+    <Compile Include="Migrations\202203172139335_warehouse-item-measureunit-creating.designer.cs">
+      <DependentUpon>202203172139335_warehouse-item-measureunit-creating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203172221458_customer-supplier-Creating.cs" />
+    <Compile Include="Migrations\202203172221458_customer-supplier-Creating.designer.cs">
+      <DependentUpon>202203172221458_customer-supplier-Creating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203180020055_operation-supply-demand-Creating.cs" />
+    <Compile Include="Migrations\202203180020055_operation-supply-demand-Creating.designer.cs">
+      <DependentUpon>202203180020055_operation-supply-demand-Creating.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Demand.cs" />
     <Compile Include="Models\Helper\MeasureUnit.cs" />
+    <Compile Include="Models\ItemMeasureUnit.cs" />
     <Compile Include="Models\Operation.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\Supply.cs" />
-    <Compile Include="Models\Type.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Warehouse.cs" />
     <Compile Include="WarehouseDBContext.cs" />
     <Compile Include="Form1.cs">
@@ -77,6 +94,18 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Migrations\202203171929578_initial.resx">
+      <DependentUpon>202203171929578_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203172139335_warehouse-item-measureunit-creating.resx">
+      <DependentUpon>202203172139335_warehouse-item-measureunit-creating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203172221458_customer-supplier-Creating.resx">
+      <DependentUpon>202203172221458_customer-supplier-Creating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203180020055_operation-supply-demand-Creating.resx">
+      <DependentUpon>202203180020055_operation-supply-demand-Creating.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

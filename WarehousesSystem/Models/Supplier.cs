@@ -1,8 +1,11 @@
 ﻿
+using System.Collections.Generic;
+
 namespace WarehousesSystem.Models
 {
-    internal class Supplier:Person
+    public class Supplier:Person
     {
+        public ICollection<Supply> Supplies { get; set; }
 
     }
 }

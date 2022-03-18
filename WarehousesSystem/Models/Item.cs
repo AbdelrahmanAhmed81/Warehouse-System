@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace WarehousesSystem.Models
 {
-    public class Warehouse
+    public class Item
     {
-        public string WarehouseName { get; set; }
-        public string Address { get; set; }
-        public string ManagerName { get; set; }
-        //navigation property
-        public ICollection<Operation> Operations { get; set; }
+        public int ItemCode { get; set; }
+        public string Name { get; set; }
 
+        //navigation property
+        public ICollection<ItemMeasureUnit> MeasureUnits { get; set; }
+        public ICollection<Operation> Operations { get; set; }
     }
 }

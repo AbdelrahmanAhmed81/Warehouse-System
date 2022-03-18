@@ -2,13 +2,16 @@
 
 namespace WarehousesSystem.Models
 {
-    internal abstract class Operation
+    public abstract class Operation
     {
-        public string PersonEmail { get; set; }
-        public int TypeCode { get; set; }
+        public Guid Code { get; set; }
+        public int ItemCode { get; set; }
         public string WarehouseName { get; set; }
-        public int DemandCode { get; set; }
         public DateTime Time { get; set; }
         public int Quantity { get; set; }
+
+        //navigation property
+        public Item Item { get; set; }
+        public Warehouse Warehouse { get; set; }
     }
 }

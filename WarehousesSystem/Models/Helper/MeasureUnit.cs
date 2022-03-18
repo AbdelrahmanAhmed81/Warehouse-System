@@ -1,6 +1,6 @@
 ﻿namespace WarehousesSystem.Models.Helper
 {
-    internal enum MeasureUnit
+    public enum MeasureUnit
     {
         centimeter,
         millimeters,

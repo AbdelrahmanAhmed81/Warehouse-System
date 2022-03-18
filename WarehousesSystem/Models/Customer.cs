@@ -1,8 +1,11 @@
 ﻿
+using System.Collections.Generic;
+
 namespace WarehousesSystem.Models
 {
-    internal class Customer:Person
+    public class Customer:Person
     {
+        public ICollection<Demand> Demands { get; set; }
 
     }
 }

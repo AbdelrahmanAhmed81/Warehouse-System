@@ -2,8 +2,10 @@
 
 namespace WarehousesSystem.Models
 {
-    internal class Demand:Operation
+    public class Demand:Operation
     {
+        public string CustomerEmail { get; set; }
 
+        public Customer Customer { get; set; }
     }
 }
