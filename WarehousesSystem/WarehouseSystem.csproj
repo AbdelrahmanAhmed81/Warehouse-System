@@ -58,6 +58,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntitiesConfigurations\SupplyConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\OperationConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\SupplierConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\CustomerConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\ItemConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\ItemMeasureUnitConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\PersonConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\DemandConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\WarehouseConfiguration.cs" />
     <Compile Include="Migrations\202203171929578_initial.cs" />
     <Compile Include="Migrations\202203171929578_initial.designer.cs">
       <DependentUpon>202203171929578_initial.cs</DependentUpon>
