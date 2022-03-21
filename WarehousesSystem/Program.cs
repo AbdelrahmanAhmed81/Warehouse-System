@@ -14,7 +14,7 @@ namespace WarehousesSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Home());
-        }
+        }      
     }
 }
 ////warehouse data
@@ -100,52 +100,66 @@ namespace WarehousesSystem
 //});
 //demand data
 //context.Operations.AddRange(new List<Demand>()
-//{
-//    new Demand()
-//    {
-//        WarehouseName = "Cairo Inventory",
-//        ItemCode = 1007,
-//        CustomerEmail ="KFC@gmail.com",
-//        Quantity = 100,
-//    },
-//    new Demand()
-//    {
-//        WarehouseName = "Cairo Inventory",
-//        ItemCode = 1009,
-//        CustomerEmail ="KFC@gmail.com",
-//        Quantity = 90,
-//    },
-//    new Demand()
-//    {
-//        WarehouseName = "Alex Inventory",
-//        ItemCode = 1008,
-//        CustomerEmail ="Nestle@gmail.com",
-//        Quantity = 150,
-//    },
-//});
+//            {
+//                new Demand()
+//                {
+//                    WarehouseName = "Cairo Inventory",
+//                    ItemCode = 1007,
+//                    CustomerEmail ="KFC@gmail.com",
+//                    Quantity = 100,
+
+//                },
+//                new Demand()
+//                {
+//                    WarehouseName = "Cairo Inventory",
+//                    ItemCode = 1009,
+//                    CustomerEmail ="KFC@gmail.com",
+//                    Quantity = 90,
+
+//                },
+//                new Demand()
+//                {
+//                    WarehouseName = "Alex Inventory",
+//                    ItemCode = 1008,
+//                    CustomerEmail ="Nestle@gmail.com",
+//                    Quantity = 150,
+
+//                },
+//            });
 ////supply data
 //context.Operations.AddRange(new List<Supply>()
-//{
-//    new Supply()
-//    {
-//        WarehouseName = "Alex Inventory",
-//        ItemCode = 1006,
-//        SupplierEmail ="Crystal@gmail.com",
-//        Quantity = 80,
-//    },
-//    new Supply()
-//    {
-//        WarehouseName = "Cairo Inventory",
-//        ItemCode = 1006,
-//        SupplierEmail ="Crystal@gmail.com",
-//        Quantity = 110,
-//    },
-//    new Supply()
-//    {
-//        WarehouseName = "Alex Inventory",
-//        ItemCode = 1009,
-//        SupplierEmail ="Cocacola@gmail.com",
-//        Quantity = 150,
-//    },
-//});
+//            {
+//                new Supply()
+//                {
+//                    WarehouseName = "Alex Inventory",
+//                    ItemCode = 1006,
+//                    SupplierEmail ="Crystal@gmail.com",
+//                    Quantity = 80,
+//                    ProductionDate = new DateTime(2021,8,23),
+//                    ExpireDays =365
+
+
+//                },
+//                new Supply()
+//                {
+//                    WarehouseName = "Cairo Inventory",
+//                    ItemCode = 1006,
+//                    SupplierEmail ="Crystal@gmail.com",
+//                    Quantity = 110,
+//                    ProductionDate = new DateTime(2021,5,15),
+//                    ExpireDays =400
+
+
+//                },
+//                new Supply()
+//                {
+//                    WarehouseName = "Alex Inventory",
+//                    ItemCode = 1009,
+//                    SupplierEmail ="Cocacola@gmail.com",
+//                    Quantity = 150,
+//                    ProductionDate = new DateTime(2020,11,1),
+//                    ExpireDays =524
+
+//                },
+//            });
 //context.SaveChanges();

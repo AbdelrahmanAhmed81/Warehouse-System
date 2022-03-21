@@ -11,6 +11,7 @@ namespace WarehousesSystem.EntitiesConfigurations
            Property(operation => operation.Quantity).IsRequired();
            Property(operation => operation.WarehouseName).IsRequired();
            Property(operation => operation.ItemCode).IsRequired();
+
         }
     }
 }

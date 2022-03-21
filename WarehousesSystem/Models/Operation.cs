@@ -8,6 +8,7 @@ namespace WarehousesSystem.Models
         public int ItemCode { get; set; }
         public string WarehouseName { get; set; }
         public DateTime Time { get; set; }= DateTime.Now;
+
         public int Quantity { get; set; }
 
         //navigation property

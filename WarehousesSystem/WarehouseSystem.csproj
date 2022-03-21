@@ -83,6 +83,14 @@
     <Compile Include="Migrations\202203180020055_operation-supply-demand-Creating.designer.cs">
       <DependentUpon>202203180020055_operation-supply-demand-Creating.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203212122157_addPDateandExDuration.cs" />
+    <Compile Include="Migrations\202203212122157_addPDateandExDuration.designer.cs">
+      <DependentUpon>202203212122157_addPDateandExDuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203212137307_modifyOperation.cs" />
+    <Compile Include="Migrations\202203212137307_modifyOperation.designer.cs">
+      <DependentUpon>202203212137307_modifyOperation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Demand.cs" />
     <Compile Include="Models\Helper\MeasureUnit.cs" />
@@ -115,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203180020055_operation-supply-demand-Creating.resx">
       <DependentUpon>202203180020055_operation-supply-demand-Creating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203212122157_addPDateandExDuration.resx">
+      <DependentUpon>202203212122157_addPDateandExDuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203212137307_modifyOperation.resx">
+      <DependentUpon>202203212137307_modifyOperation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

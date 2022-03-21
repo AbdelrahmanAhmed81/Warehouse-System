@@ -7,6 +7,8 @@ namespace WarehousesSystem.EntitiesConfigurations
     {
         public SupplyConfiguration()
         {
+            Property(operation => operation.ProductionDate).HasColumnType("date").IsRequired();
+            Property(operation => operation.ExpireDays).IsRequired();
             Map(m =>
             {
                 m.MapInheritedProperties();
