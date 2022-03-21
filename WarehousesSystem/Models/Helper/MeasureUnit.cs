@@ -12,6 +12,8 @@
         kilogram,
         milliliter,
         liter,
-        kiloliter
+        kiloliter,
+        package,
+        bottle
     }
 }
