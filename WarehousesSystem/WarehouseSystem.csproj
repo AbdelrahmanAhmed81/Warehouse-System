@@ -67,6 +67,43 @@
     <Compile Include="EntitiesConfigurations\PersonConfiguration.cs" />
     <Compile Include="EntitiesConfigurations\DemandConfiguration.cs" />
     <Compile Include="EntitiesConfigurations\WarehouseConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\WarehouseItemConfiguration.cs" />
+    <Compile Include="Forms\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DemandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DemandForm.Designer.cs">
+      <DependentUpon>DemandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemForm.Designer.cs">
+      <DependentUpon>ItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SupplierForm.Designer.cs">
+      <DependentUpon>SupplierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SupplyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SupplyForm.Designer.cs">
+      <DependentUpon>SupplyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseForm.Designer.cs">
+      <DependentUpon>WarehouseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202203171929578_initial.cs" />
     <Compile Include="Migrations\202203171929578_initial.designer.cs">
       <DependentUpon>202203171929578_initial.cs</DependentUpon>
@@ -91,6 +128,10 @@
     <Compile Include="Migrations\202203212137307_modifyOperation.designer.cs">
       <DependentUpon>202203212137307_modifyOperation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203222350393_creating-warehouseitem-entity.cs" />
+    <Compile Include="Migrations\202203222350393_creating-warehouseitem-entity.designer.cs">
+      <DependentUpon>202203222350393_creating-warehouseitem-entity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Demand.cs" />
     <Compile Include="Models\Helper\MeasureUnit.cs" />
@@ -101,19 +142,38 @@
     <Compile Include="Models\Supply.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Warehouse.cs" />
+    <Compile Include="Models\WarehouseItem.cs" />
     <Compile Include="Validation.cs" />
     <Compile Include="WarehouseDBContext.cs" />
-    <Compile Include="Home.cs">
+    <Compile Include="Forms\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="Forms\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="Forms\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DemandForm.resx">
+      <DependentUpon>DemandForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemForm.resx">
+      <DependentUpon>ItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SupplierForm.resx">
+      <DependentUpon>SupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SupplyForm.resx">
+      <DependentUpon>SupplyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseForm.resx">
+      <DependentUpon>WarehouseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203171929578_initial.resx">
       <DependentUpon>202203171929578_initial.cs</DependentUpon>
@@ -132,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203212137307_modifyOperation.resx">
       <DependentUpon>202203212137307_modifyOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203222350393_creating-warehouseitem-entity.resx">
+      <DependentUpon>202203222350393_creating-warehouseitem-entity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
