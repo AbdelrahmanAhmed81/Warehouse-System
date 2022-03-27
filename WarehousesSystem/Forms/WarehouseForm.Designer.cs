@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnItem = new System.Windows.Forms.Button();
             this.btnSupply = new System.Windows.Forms.Button();
@@ -75,7 +77,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(168, 541);
+            this.panel1.Size = new System.Drawing.Size(168, 537);
             this.panel1.TabIndex = 1;
             // 
             // btnItem
@@ -216,7 +218,7 @@
             this.txtWarehouseName.MaxLength = 20;
             this.txtWarehouseName.Name = "txtWarehouseName";
             this.txtWarehouseName.Size = new System.Drawing.Size(180, 20);
-            this.txtWarehouseName.TabIndex = 2;
+            this.txtWarehouseName.TabIndex = 0;
             // 
             // label2
             // 
@@ -244,7 +246,7 @@
             this.txtManager.MaxLength = 50;
             this.txtManager.Name = "txtManager";
             this.txtManager.Size = new System.Drawing.Size(180, 20);
-            this.txtManager.TabIndex = 4;
+            this.txtManager.TabIndex = 2;
             // 
             // label4
             // 
@@ -262,7 +264,7 @@
             this.txtAddress.MaxLength = 50;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(180, 20);
-            this.txtAddress.TabIndex = 6;
+            this.txtAddress.TabIndex = 1;
             // 
             // label5
             // 
@@ -287,6 +289,7 @@
             this.btnAddWarehouse.TabIndex = 9;
             this.btnAddWarehouse.Text = "Add";
             this.btnAddWarehouse.UseVisualStyleBackColor = false;
+            this.btnAddWarehouse.Click += new System.EventHandler(this.btnAddWarehouse_Click);
             // 
             // panel3
             // 
@@ -303,7 +306,7 @@
             this.txtWarehouseNameUpdate.MaxLength = 20;
             this.txtWarehouseNameUpdate.Name = "txtWarehouseNameUpdate";
             this.txtWarehouseNameUpdate.Size = new System.Drawing.Size(180, 20);
-            this.txtWarehouseNameUpdate.TabIndex = 2;
+            this.txtWarehouseNameUpdate.TabIndex = 3;
             // 
             // label6
             // 
@@ -321,7 +324,7 @@
             this.txtManagerUpdate.MaxLength = 50;
             this.txtManagerUpdate.Name = "txtManagerUpdate";
             this.txtManagerUpdate.Size = new System.Drawing.Size(180, 20);
-            this.txtManagerUpdate.TabIndex = 4;
+            this.txtManagerUpdate.TabIndex = 5;
             // 
             // label7
             // 
@@ -339,7 +342,7 @@
             this.txtAddressUpdate.MaxLength = 50;
             this.txtAddressUpdate.Name = "txtAddressUpdate";
             this.txtAddressUpdate.Size = new System.Drawing.Size(180, 20);
-            this.txtAddressUpdate.TabIndex = 6;
+            this.txtAddressUpdate.TabIndex = 4;
             // 
             // label8
             // 
@@ -374,20 +377,47 @@
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // dgvWarehouseData
             // 
+            this.dgvWarehouseData.AllowUserToAddRows = false;
+            this.dgvWarehouseData.AllowUserToResizeColumns = false;
+            this.dgvWarehouseData.AllowUserToResizeRows = false;
+            this.dgvWarehouseData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWarehouseData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvWarehouseData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvWarehouseData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvWarehouseData.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvWarehouseData.Location = new System.Drawing.Point(196, 298);
+            this.dgvWarehouseData.MultiSelect = false;
             this.dgvWarehouseData.Name = "dgvWarehouseData";
+            this.dgvWarehouseData.ReadOnly = true;
+            this.dgvWarehouseData.RowHeadersVisible = false;
+            this.dgvWarehouseData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvWarehouseData.Size = new System.Drawing.Size(646, 231);
             this.dgvWarehouseData.TabIndex = 11;
+            this.dgvWarehouseData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWarehouseData_CellClick);
             // 
             // WarehouseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 541);
+            this.ClientSize = new System.Drawing.Size(860, 537);
             this.ControlBox = false;
             this.Controls.Add(this.dgvWarehouseData);
             this.Controls.Add(this.panel3);

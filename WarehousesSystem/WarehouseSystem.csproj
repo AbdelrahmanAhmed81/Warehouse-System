@@ -104,6 +104,7 @@
     <Compile Include="Forms\WarehouseForm.Designer.cs">
       <DependentUpon>WarehouseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper.cs" />
     <Compile Include="Migrations\202203171929578_initial.cs" />
     <Compile Include="Migrations\202203171929578_initial.designer.cs">
       <DependentUpon>202203171929578_initial.cs</DependentUpon>
