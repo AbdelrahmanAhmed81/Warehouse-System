@@ -154,9 +154,8 @@ namespace WarehousesSystem.Forms
                     context.Entry(newWarehouse).State = EntityState.Modified;
                     context.SaveChanges();
                     MessageBox.Show("Warehouse Updated Successfuly");
-                    txtWarehouseNameUpdate.Text = string.Empty;
-                    txtAddressUpdate.Text = string.Empty;
-                    txtManagerUpdate.Text = string.Empty;
+                    txtWarehouseNameUpdate.Text = txtAddressUpdate.Text = txtManagerUpdate.Text = string.Empty;
+
                     dataLoad();
                 }
             }

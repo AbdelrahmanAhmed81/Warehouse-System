@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using WarehousesSystem.Forms;
+
 namespace WarehousesSystem
 {
     internal static class Program

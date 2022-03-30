@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
@@ -9,7 +10,7 @@ namespace WarehousesSystem
 {
     static class Helper
     {
-        public static DataTable ToDataTable<T>(this DbSet<T> data,DbContext context) where T : class
+        public static DataTable ToDataTable<T>(this IEnumerable<T> data,DbContext context) where T : class
         {
             Type type = typeof(T);
             var instance = (T)Activator.CreateInstance(type);
