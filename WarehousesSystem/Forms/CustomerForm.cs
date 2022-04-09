@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using WarehousesSystem.Models;
 
 namespace WarehousesSystem.Forms
 {
@@ -52,7 +49,17 @@ namespace WarehousesSystem.Forms
             Home.form = "Supply";
             Close();
         }
-
-        
+        private void dataLoad()
+        {
+            using (var context = new WarehouseSystem.WarehouseDBContext())
+            {
+                dgvCustomerData.DataSource = context.Persons.Where(p=>p is Customer).Select(p => p as Customer).ToDataTable(context);
+            }
+            dgvCustomerData.ClearSelection();
+        }
+        private void CustomerForm_Load(object sender , EventArgs e)
+        {
+            dataLoad();
+        }
     }
 }

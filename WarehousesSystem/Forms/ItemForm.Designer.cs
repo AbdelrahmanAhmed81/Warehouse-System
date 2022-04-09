@@ -79,7 +79,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(168, 525);
+            this.panel1.Size = new System.Drawing.Size(168, 533);
             this.panel1.TabIndex = 1;
             // 
             // btnItem
@@ -339,7 +339,7 @@
             this.dgvItemData.ReadOnly = true;
             this.dgvItemData.RowHeadersVisible = false;
             this.dgvItemData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvItemData.Size = new System.Drawing.Size(412, 160);
+            this.dgvItemData.Size = new System.Drawing.Size(412, 168);
             this.dgvItemData.TabIndex = 20;
             this.dgvItemData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemData_CellClick);
             // 
@@ -410,7 +410,7 @@
             this.dgvItemMeasureUnits.ReadOnly = true;
             this.dgvItemMeasureUnits.RowHeadersVisible = false;
             this.dgvItemMeasureUnits.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvItemMeasureUnits.Size = new System.Drawing.Size(228, 160);
+            this.dgvItemMeasureUnits.Size = new System.Drawing.Size(228, 168);
             this.dgvItemMeasureUnits.TabIndex = 25;
             // 
             // clbMeasureUnitsUpdate
@@ -436,7 +436,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 525);
+            this.ClientSize = new System.Drawing.Size(856, 533);
             this.ControlBox = false;
             this.Controls.Add(this.label7);
             this.Controls.Add(this.clbMeasureUnitsUpdate);
